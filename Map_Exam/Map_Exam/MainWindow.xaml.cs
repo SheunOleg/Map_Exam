@@ -25,7 +25,7 @@ namespace Map_Exam
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_Login(object sender, RoutedEventArgs e)
         {
 
         }

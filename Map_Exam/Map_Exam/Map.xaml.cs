@@ -42,20 +42,37 @@ namespace Map_Exam
             GMapMarker gmm = new GMapMarker(pll);
             gmm.Shape = new Ellipse() { Width = 10, Height = 10, Fill = Brushes.Red };
             gmap.Markers.Add(gmm);
-      }
+        }
 
-        //private void gmap_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
-        //{
-        //    RoutingProvider rp = gmap.MapProvider as RoutingProvider;
-        //    List<PointLatLng> ps = new List<PointLatLng>();
-        //    for (int i = 0; i < Lpll.Count-1; i++)
-        //    {
-        //        MapRoute r = rp.GetRoute(Lpll[i], Lpll[i + 1], false, true, 13);
-        //        ps.AddRange(r.Points);
-        //    }
-        //    GMapRoute mapRoute = new GMapRoute(ps);
-        //    gmap.Markers.Add(mapRoute);
-        //    gmap.ZoomAndCenterMarkers(13);
-        //}
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RoutingProvider rp = gmap.MapProvider as RoutingProvider;
+            List<PointLatLng> ps = new List<PointLatLng>();
+            for (int i = 0; i < Lpll.Count - 1; i++)
+            {
+                MapRoute r = rp.GetRoute(Lpll[i], Lpll[i + 1], false, true, 13);
+                ps.AddRange(r.Points);
+            }
+            GMapRoute mapRoute = new GMapRoute(ps);
+            gmap.Markers.Add(mapRoute);
+            gmap.ZoomAndCenterMarkers(13);
+        }
+
+        bool b = false;
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (b)
+            {
+                MenuLeft.Width = new GridLength(150);
+                MenuRight.Width = new GridLength(150);
+            }
+            else
+            {
+                MenuLeft.Width = new GridLength(0);
+                MenuRight.Width = new GridLength(0);
+            }
+            b = !b;
+        }
+
     }
 }

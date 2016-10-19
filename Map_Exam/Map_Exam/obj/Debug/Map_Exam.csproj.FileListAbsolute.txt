@@ -17,3 +17,41 @@ G:\Шаг\Програмируем сети\Map_Exam\Map_Exam\obj\Debug\Map_Exam
 G:\Шаг\Програмируем сети\Map_Exam\Map_Exam\obj\Debug\Map_Exam.csproj.GenerateResource.Cache
 G:\Шаг\Програмируем сети\Map_Exam\Map_Exam\obj\Debug\Map_Exam.exe
 G:\Шаг\Програмируем сети\Map_Exam\Map_Exam\obj\Debug\Map_Exam.pdb
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\Map_Exam.exe.config
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.exe
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.pdb
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\Map_Exam.exe
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\Map_Exam.pdb
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\GMap.NET.Core.dll
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\GMap.NET.WindowsPresentation.dll
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\GMap.NET.Core.xml
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\GMap.NET.WindowsPresentation.xml
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.csprojResolveAssemblyReference.cache
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\MainWindow.baml
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map.baml
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\MainWindow.g.cs
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map.g.cs
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\App.g.cs
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam_MarkupCompile.cache
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.g.resources
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.Properties.Resources.resources
+G:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.csproj.GenerateResource.Cache
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\Map_Exam.exe.config
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.exe
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.pdb
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\Map_Exam.exe
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\Map_Exam.pdb
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\GMap.NET.Core.dll
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\GMap.NET.WindowsPresentation.dll
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\GMap.NET.Core.xml
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\GMap.NET.WindowsPresentation.xml
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.csprojResolveAssemblyReference.cache
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\MainWindow.baml
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map.baml
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\MainWindow.g.cs
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map.g.cs
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\App.g.cs
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam_MarkupCompile.cache
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.g.resources
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.Properties.Resources.resources
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.csproj.GenerateResource.Cache

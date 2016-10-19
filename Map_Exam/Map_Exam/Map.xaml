@@ -6,14 +6,22 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition Width="150"></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Name="MenuRight" Width="150"></ColumnDefinition>
+            <ColumnDefinition Name="MenuLeft" Width="150"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        
-        <gmap:GMapControl Name="gmap" Loaded="gmap_Loaded" MouseDoubleClick="gmap_MouseDoubleClick" MinZoom="2" MaxZoom="18" Zoom="13" ></gmap:GMapControl>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <gmap:GMapControl Grid.Row="1" Name="gmap" Loaded="gmap_Loaded" MouseDoubleClick="gmap_MouseDoubleClick" MinZoom="2" MaxZoom="18" Zoom="13" >
+            
+        </gmap:GMapControl>
+            <Button Content="Скрыть" HorizontalAlignment="Left" Width="292" Click="Button_Click_1"/>
+        </Grid>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="20"></RowDefinition>
@@ -26,14 +34,14 @@
                 <RowDefinition Height="120"></RowDefinition>
 
             </Grid.RowDefinitions>
-            
-            <TextBox Grid.Row="0">Текст фильтра</TextBox>
-            <RadioButton Grid.Row="1" HorizontalAlignment="Center">Страна</RadioButton>
-            <RadioButton Grid.Row="2" HorizontalAlignment="Center">Город</RadioButton>
-            <RadioButton Grid.Row="3" HorizontalAlignment="Center">Длительность</RadioButton>
-            <RadioButton Grid.Row="4" HorizontalAlignment="Center">Тип</RadioButton>
-            <Button Grid.Row="5">Фильтровать</Button>
-            <ListBox Grid.Row="6" ></ListBox>
+
+            <TextBox Grid.Row="0" Name="TextFiltr">Текст фильтра</TextBox>
+            <RadioButton Grid.Row="1" HorizontalAlignment="Center" Name="Country" IsChecked="True">Страна</RadioButton>
+            <RadioButton Grid.Row="2" HorizontalAlignment="Center" Name="City">Город</RadioButton>
+            <RadioButton Grid.Row="3" HorizontalAlignment="Center" Name="Duration">Длительность</RadioButton>
+            <RadioButton Grid.Row="4" HorizontalAlignment="Center" Name="Type">Тип</RadioButton>
+            <Button Grid.Row="5" Name="Filtr">Фильтровать</Button>
+            <ListBox Grid.Row="6" Name="ListRoute"></ListBox>
             <Grid Grid.Row="7">
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
@@ -41,10 +49,10 @@
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
-                <TextBox Grid.Row="0">Название</TextBox>
+                <Button Grid.Row="0">Лайкнуть</Button>
                 <TextBox Grid.Row="1">Описание</TextBox>
-                <TextBox Grid.Row="2">Координаты</TextBox>
-                <TextBox Grid.Row="3">Изображение</TextBox>
+                <Button Grid.Row="2">Оставить коментарий</Button>
+                <Button Grid.Row="3">Оставить Жалобу</Button>
             </Grid>
 
         </Grid>
@@ -56,9 +64,10 @@
                 <RowDefinition Height="20"></RowDefinition>
                 <RowDefinition Height="20"></RowDefinition>
                 <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition Height="120"></RowDefinition>
-
             </Grid.RowDefinitions>
 
             <TextBox Grid.Row="0">Название</TextBox>
@@ -68,9 +77,22 @@
             <TextBox Grid.Row="4">Длительность</TextBox>
             <TextBox Grid.Row="5">Тип</TextBox>
             <TextBox Grid.Row="5">Состояние</TextBox>
-            <ListBox Grid.Row="6"></ListBox>
+            <Button Grid.Row="6" Click="Button_Click">Создать карту</Button>
+            <Button Grid.Row="7">Изменить маршрут</Button>
+            <ListBox Grid.Row="8" Name="ListDot"></ListBox>
 
-            <!--/*названия, описания, страны, города, длительности, типа, состояния, списка точек*/-->
+            <Grid Grid.Row="9">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBox Grid.Row="0">Название</TextBox>
+                <TextBox Grid.Row="1">Описание</TextBox>
+                <TextBox Grid.Row="2">Координаты</TextBox>
+                <TextBox Grid.Row="3">Изображение</TextBox>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
