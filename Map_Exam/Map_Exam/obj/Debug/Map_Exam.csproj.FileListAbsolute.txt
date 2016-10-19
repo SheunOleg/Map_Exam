@@ -55,3 +55,4 @@ E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam_MarkupCompile.cache
 E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.g.resources
 E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.Properties.Resources.resources
 E:\Oracle\Map_Exam\Map_Exam\Map_Exam\obj\Debug\Map_Exam.csproj.GenerateResource.Cache
+E:\Oracle\Map_Exam\Map_Exam\Map_Exam\bin\Debug\Oracle.ManagedDataAccess.dll
