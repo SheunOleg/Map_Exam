@@ -44,7 +44,7 @@ namespace Map_Exam
             gmap.Markers.Add(gmm);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Create_Map_Click(object sender, RoutedEventArgs e)
         {
             RoutingProvider rp = gmap.MapProvider as RoutingProvider;
             List<PointLatLng> ps = new List<PointLatLng>();
@@ -72,6 +72,42 @@ namespace Map_Exam
                 MenuRight.Width = new GridLength(0);
             }
             b = !b;
+        }
+
+        private void ListRoute_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void ListDot_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DotName.Text = "";
+            DotDescript.Text = "";
+            DotCoord.Text = "";
+            DotImage.Text = "";
+        }
+
+        private void But_Like_Click(object sender, RoutedEventArgs e)
+        {
+            if (true)
+                But_Like.Content = "Дизлайк";
+            else
+                But_Like.Content = "Лайк";
+        }
+
+        private void But_Comment_Click(object sender, RoutedEventArgs e)
+        {
+            Route_Descript.Text = "";
+        }
+
+        private void But_Complaite_Click(object sender, RoutedEventArgs e)
+        {
+            Route_Descript.Text = "";
+        }
+
+        private void But_Filtr_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
     }

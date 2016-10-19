@@ -42,43 +42,32 @@ namespace Map_Exam
         {
             OracleCommand com = new OracleCommand();
             com.Connection = oracleConn;
+            com.CommandText = "BEGIN PROVER('" + Login.Text + "','" + Password.Text + "') END";
+            var res = com.ExecuteScalar();
 
-            com.CommandText = "BEGIN PROVER(':login',':password')";
-            com.Parameters.Add("login", OracleDbType.NVarchar2, 10).Value = Login.Text;
-            com.Parameters.Add("password", OracleDbType.NVarchar2, 10).Value = Password.Text;
-            OracleDataReader res = com.ExecuteReader();
-            while (res.Read())
+            if ((bool)res == true)
             {
-                if ((bool)res[0] == true)
-                { 
-                }
-                else 
-                { 
-                }
             }
+            else
+            {
+            }
+
         }
 
         private void Button_Click_Registr(object sender, RoutedEventArgs e)
         {
-            try
-            {
-
-                OracleCommand com = new OracleCommand("Select * From OPERATOR_;", oracleConn);
-                //OracleCommand com = new OracleCommand("SELECT * FROM ALL_TABLES", oracleConn);
-                //com.CommandText = "INSERT INTO OPERATOR_(ID,NAME,PSWD) VALUES(2,':login',':password');";
-                //com.Parameters.Add("login", OracleDbType.NVarchar2, 10).Value = Login.Text;
-                //com.Parameters.Add("password", OracleDbType.NVarchar2, 10).Value = Password.Text;
-                OracleDataReader reader = com.ExecuteReader();
-                while (reader.Read())
+            if (Login.Text != null && Password.Text != null)
+                try
                 {
-
-                    Console.WriteLine("\t{0}\t{1}\t{2}",
-                    reader[0], reader[1], reader[2]);
+                    OracleCommand com = new OracleCommand("INSERT INTO OPERATOR_(NAME,PSWD) VALUES('" + Login.Text + "','"
+                        + Password.Text + "')", oracleConn);
+                    var res = com.ExecuteReader();
+                    //while (res.Read())
+                    //{
+                    //    Console.WriteLine(res[1].ToString());
+                    //}
                 }
-                reader.Close();
-                
-            }
-            catch { }
+                catch { }
 
         }
     }
